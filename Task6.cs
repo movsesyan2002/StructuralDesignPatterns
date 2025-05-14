@@ -42,38 +42,38 @@
 // // Holds a reference to a BulletType.
 
 
-// interface IBulletType {
-//     string SpriteName { get; set; }
-//     int Damagevalue { get; set; }
+interface IBulletType {
+    string SpriteName { get; set; }
+    int Damagevalue { get; set; }
 
-//     void render(int x, int y, int direction);
+    void render(int x, int y, int direction);
 
-// }
-
-
-// class ConcreteBulletType : IBulletType {
-
-//     public string SpriteName { get; set; }
-//     public int Damagevalue { get; set;}
+}
 
 
-//     public void render (int x, int y, int direction) {
+class ConcreteBulletType : IBulletType {
 
-//         Console.WriteLine($"Drawing {SpriteName} bullet at ({x}, {y}) heading {direction} damage {Damagevalue}");
+    public string SpriteName { get; set; }
+    public int Damagevalue { get; set;}
+
+
+    public void render (int x, int y, int direction) {
+
+        Console.WriteLine($"Drawing {SpriteName} bullet at ({x}, {y}) heading {direction} damage {Damagevalue}");
     
-//     }
+    }
 
-// }
-
-
-// class BulletTypeFactory {
+}
 
 
-
-// }
-
-// class BulletType {
+class BulletTypeFactory {
 
 
 
-// }
+}
+
+class BulletType {
+
+
+
+}
